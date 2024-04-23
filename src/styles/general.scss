@@ -1,0 +1,78 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.bg-primary-color {
+    background-color: $primary_color
+}
+
+.primary-button {
+    @include base_button;
+    @include blue_button;
+}
+
+.primary-button-sm {
+    @include base_button_sm;
+    @include blue_button;
+}
+
+.primary-button.disabled,
+.primary-button-sm.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.active-menu {
+    color: $secondary_color;
+}
+
+.router-link-active {
+    color: $secondary_color
+}
+
+.badge-category {
+    background-color: $primary_color;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #fff;
+
+    &:hover {
+        background-color: #006eff;
+    }
+}
+
+header,
+footer {
+    background-color: $primary_color;
+    padding: 20px 0px;
+
+    ul {
+        li {
+            padding: 5px 15px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(134, 134, 134)
+                }
+            }
+        }
+    }
+}
