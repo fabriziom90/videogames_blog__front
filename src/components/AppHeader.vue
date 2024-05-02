@@ -33,7 +33,7 @@ export default {
                                 </div> -->
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/login">Login</a>
+                                <a href="/samples/videogames_blog_back/login">Login</a>
                             </li>
                         </ul>
                     </div>

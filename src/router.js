@@ -12,37 +12,37 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/',
+            path: '/samples/videogames_blog_front/',
             name: 'home',
             component: AppHome
         },
         {
-            path: '/blog',
+            path: '/samples/videogames_blog_front/blog',
             name: 'blog',
             component: AppBlog
         },
         {
-            path: '/blog/:slug',
+            path: '/samples/videogames_blog_front/blog/:slug',
             name: 'single-post',
             component: SinglePost
         },
         {
-            path: '/blog/category/:slug',
+            path: '/samples/videogames_blog_front/blog/category/:slug',
             name: 'category-posts',
             component: CategoryPosts
         },
         {
-            path: '/contacts',
+            path: '/samples/videogames_blog_front/contacts',
             name: 'contacts',
             component: AppContactUs
         },
         {
-            path: '/thank-you',
+            path: '/samples/videogames_blog_front/thank-you',
             name: 'thank-you',
             component: AppThankYouPage
         },
         {
-            path: '/:pathMatch(.*)*',
+            path: '/samples/videogames_blog_front/:pathMatch(.*)*',
             name: 'not-found',
             component: AppNotFound
         }
